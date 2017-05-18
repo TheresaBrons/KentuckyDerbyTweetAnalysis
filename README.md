@@ -44,8 +44,8 @@ The first is one of those famous 'wordclouds'.  The text colors are random (the 
 ![alt text](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/twitter_derby.png)
 
 
-The frequency of the 25 most commonly tweeted words in the Derby tweet corpus.  I'm a little surprised 'one' isn't considered a stopword (stopwords are words that are considered to have little information about sentiment and that are removed from tweets during the 'cleaning' process).  But, surprising to me, 'co' deserves to be up there; a "co-favorite" happened to be the winner of the Derby this year!
-https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_frequency_distr.png
+The frequency of the 25 most commonly tweeted words in the Derby tweet corpus.  I'm a little surprised 'one' isn't considered a stopw![alt text](ord (stopwords are words that are considered to have little information about sentiment and that are removed from tweets during the 'cleaning' process).  But, surprising to me, 'co' deserves to be up there; a "co-favorite" happened to be the winner of the Derby this year!
+![alt text](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_frequency_distr.png)
 
 
 # Training Sentiment Analysis Algorithms
@@ -65,11 +65,11 @@ The precision, recall, and f1 scores are also reported.  To interpret the result
 The algorithms perform pretty similarly, but the Naive Bayes was more balanced between precision and recall for both types of tweets, so I used that algorithm to analyze the Derby tweet corpus.
 
 Here are the results:
-https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNeg.png
+![alt text](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNeg.png)
 
 Later, I used Textblob's sentiment.polarity to get a sense of how positive and negative tweets.  The bar graph below shows that most tweets were relatively neutral.
-https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNegNeut.png
-https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentdistr.png
+![alt text](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNegNeut.png)
+![alt text](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentdistr.png)
 
 
 # Derby Tweet Stats Over Time
