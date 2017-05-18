@@ -1,26 +1,40 @@
 # KentuckyDerbyTweetAnalysis
 
-# Author's Note
+In my first project, I analyze the sentiment of tweets about the Kentucky Derby gathered during Derby Day (keeping it light during the big health care debate!). 
 
-The purpose of this project was to give myself something to play with order to learn some basic skills relevant to machine learning.  To that end, I decided to do a variation of a project that had already been done.  In particular, I used Deepna Devkar's project where she analyzes the sentiment of tweets about a basketball game, accessible here: https://github.com/deepnadevkar/twittersentimentanalysis/blob/master/sentimentanalysis_models.ipynb
+# Purpose of Project & Disclaimer
 
-Here, I analyze tweets about the Kentucky Derby gathered during Derby Day.  You will notice that there are two gaps of several hours in my tweet corpus  (due to some rather silly technical difficulties that I simply didn't know to watch out for!).  Fortunately, I managed to gather tweets during the actual race.  One of the 'learning experiences' I encountered caused me to lose the file I used to gather the tweets.  If you are interested in doing something similar, you can model your code after:
-https://github.com/deepnadevkar/twittersentimentanalysis/blob/master/tweetstreaming.py 
+The purpose of this project was to give myself something to play with order to learn some basic skills relevant to machine learning.  To that end, I decided to do a variation of a project that had already been done.  In particular, as a model, I used Deepna Devkar's project where she analyzes the sentiment of tweets about a basketball game, accessible here:  https://github.com/deepnadevkar/twittersentimentanalysis/blob/master/sentimentanalysis_models.ipynb and here: http://www.nbalogic.com/nbadetail_C2cF5H7jA0F5j.htm
 
-So I didn't record what my key tweeted words were (to decide which tweets to collect), other than that I know they included "Kentucky Derby", "Churchill Downs", and several of the front runners' names (but not all contenders).  Because my list of key words was hastily put together before work, take the wordcloud I made with a grain of salt.  However, it did manage to pick up Tom Brady (who attended), despite the fact that I definitely didn't include his name in my key words list.
+Since the code I was customizing is 2+ years old, I got a lot of warnings/errors due to changes in the packages used (or even changes I made to the code).  Fortunately, Python error/warning messages are *usually* pretty helpful.  But thank heavens for StackOverflow!
 
+You will notice that there are two gaps of several hours in my tweet corpus  (due to some rather silly technical difficulties that I simply didn't know to watch out for!).  Fortunately, I managed to gather tweets during the actual race.  One of the 'learning experiences' I encountered caused me to lose the code I used to gather the tweets.   I customized the following code to gather the streaming data:
+https://github.com/deepnadevkar/twittersentimentanalysis/blob/master/tweetstreaming.py   
+
+One point is, though, that I don't have a record what my key words were (to decide which tweets to collect), other than that I know they included "Kentucky Derby", "Churchill Downs", and several of the front runners' names (but not all contenders).  Because my list of key words was hastily put together before work, take the wordcloud I made with a grain of salt.  However, it did manage to pick up Tom Brady (an attendee, not a contender, silly), despite the fact that I definitely didn't include his name in my key words list.  
 
 # Software Used
 
-I did everything in Jupyter Notebook using Python 3.5.  There are many Python modules used in the code, and because the code I modeled from was 2+ years old, I had to change a few parameters and module names here and there.  *Usually* Python error/warning messages are pretty helpful, but sometimes going to StackOver or the documentation was required.
+To gather tweets, you need to make a twitter developer account to access the Twitter API.  For those interested, here's a tutorial: https://www.dataquest.io/blog/streaming-data-python/ 
 
+I did almost everything in Jupyter Notebook using Python 3.5.  I used MongoDB, Tweepy, and Pymongo to get the tweets into a JSON file. After that, I manipulated and plotted the data with the help of several Python packages (see code).  
 
-I also want to write a description of how I used mongodb.
+# Twitter Sentiment Corpus
 
-
-I'll write this later: I won't upload sentiment corpus, I will provide a link, though.
+To train my machine learning algorithms to guess the sentiment value of the tweets I gathered, I used the Twitter Sentiment Analysis Dataset, which at the time held more than 1.5 million tweets.  Amazingly, all of them have been evaluated for their sentiment value: 1 for positive and 0 for negative.  You can find a link here: 
 http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/ 
 
-# What does this do?
-Apparently I have lost the tweet-streaming files, so I can't remember what key words I used...
-churchill downs + front-runners, kentucky derby maybe
+The file is enormous, so I isolated about 100,000 of them for use.  Code for that: https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/MakeMiniCorpus.ipynb 
+
+I Devkar's code to read and clean the mini-corpus, preparing it for the algorithms: https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/ReadAndCleanMiniCorpus.ipynb
+
+# Kentucky Derby Corpus
+
+The first thing I noticed upon inspecting the JSON file (as a PANDAS dataframe) was that I had a fair number of Portuguese tweets!  Whoops, it turns out that the Derby Paulista, a 100 year old soccer rivalry between the Corinthians and the Palmeiras, who have a match every year in Sao Paulo, Brazil, is still hot topic of conversation.  So I used TextBlob to collect only the English tweets in the hopes that most people speaking English would be talking about the Kentucky Derby.
+
+I learned right away that TextBlob relies on Google Translate.  In other words, it needs a good internet connection!  The code took about 5 hours to run after I finally got a stable internet connection.  I've since played with it, so you can't see the output anymore, but here's what I ran:
+https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/Kentucky%20DerbyEnglish.ipynb
+
+You'll notice that the code also cleans up the text of the tweets to prepare them for the analysis algorithms.  You can see the output in: https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_cleantext.csv
+
+# Training Sentiment Analysis Algorithms
