@@ -48,9 +48,19 @@ https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_fre
 
 # Training Sentiment Analysis Algorithms
 
-
+For reference (and some cool graphs), see:
 https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/TrainSentimentAnalysis.ipynb
 
+To begin, after separating the tweets into training and testing tweets (a 90/10 split), the cleaned tweets have to be transformed into a format that the machine learning algorithms can understand.  That's where TfidfVectorizer.fit_transform() comes in handy.  It turns each tweet into a numpy.ndarray containing 5000 numbers.  Each entry in an refers to a particular word in TfidfVectorizer's 5000 word dictionary, and if that particular word shows up in a given tweet, that tweets array will have a non-zero number in that place (bigger if the word is less common).  Now we have a 'bag of words'.
+
+Once the Derby training tweets are represented by a (number of tweets)x(5000) array, they're fed into 3 different machine learning algorithms: Random Forests (through scikit's RandomForestClassifier), multinomial Naive Bayes, and the Support Vector Machine.  For each of these, I've printed out the "confusion matrix", which shows how well each algorithm did at guessing the sentiment of the test data.  Rows indicate the actual classification of tweets (top row negative tweets, bottom row for positive tweets), and columns indicate what the given algorithm guessed the sentiment was.  
+
+The precision, recall, and f1 scores are also reported.  To interpret the result, look at the first row of one of the reports (the row concerning negative tweets):
+* Precision: Of the tweets guessed to be negative, what proportion are actually negative?
+* Recall: Of the tweets that are actually negative, what proportion were guessed to be negative?
+* f1 score: weighted average of the precision and recall, 1 means algorithm is perfect
+
+The algorithms perform pretty similarly, but the Naive Bayes was more balanced between precision and recall for both types of tweets, so I used that algorithm to analyze the Derby tweet corpus.
 
 
 # Derby Tweet Stats Over Time
