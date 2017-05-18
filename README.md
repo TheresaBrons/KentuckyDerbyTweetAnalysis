@@ -45,7 +45,7 @@ The first is one of those famous 'wordclouds'.  The text colors are random (the 
 
 
 The frequency of the 25 most commonly tweeted words in the Derby tweet corpus.  I'm a little surprised 'one' isn't considered a stopw![alt text](ord (stopwords are words that are considered to have little information about sentiment and that are removed from tweets during the 'cleaning' process).  But, surprising to me, 'co' deserves to be up there; a "co-favorite" happened to be the winner of the Derby this year!
-![alt text](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_frequency_distr.png)
+![alt text](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_frequency_distr.png = 250x250)
 
 
 # Training Sentiment Analysis Algorithms
