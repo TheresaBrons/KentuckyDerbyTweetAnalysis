@@ -48,7 +48,6 @@ The frequency of the 25 most commonly tweeted words in the Derby tweet corpus.  
 
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_frequency_distr.png" width="800" height="500">
 
-<img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/twitter_derby_experiment.png" width="800" height="500">
 
 # Training Sentiment Analysis Algorithms
 
