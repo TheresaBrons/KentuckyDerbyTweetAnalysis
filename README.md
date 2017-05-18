@@ -1,6 +1,6 @@
 # KentuckyDerbyTweetAnalysis
 
-#Author's Note
+# Author's Note
 
 The purpose of this project was to give myself something to play with order to learn some basic skills relevant to machine learning.  To that end, I decided to do a variation of a project that had already been done.  In particular, I used Deepna Devkar's project where she analyzes the sentiment of tweets about a basketball game, accessible here: https://github.com/deepnadevkar/twittersentimentanalysis/blob/master/sentimentanalysis_models.ipynb
 
@@ -10,7 +10,7 @@ https://github.com/deepnadevkar/twittersentimentanalysis/blob/master/tweetstream
 So I didn't record what my key tweeted words were (to decide which tweets to collect), other than that I know they included "Kentucky Derby", "Churchill Downs", and several of the front runners' names (but not all contenders).  Because my list of key words was hastily put together before work, take the wordcloud I made with a grain of salt.  However, it did manage to pick up Tom Brady (who attended), despite the fact that I definitely didn't include his name in my key words list.
 
 
-#Software Used
+# Software Used
 
 I did everything in Jupyter Notebook using Python 3.5.  There are many Python modules used in the code, and because the code I modeled from was 2+ years old, I had to change a few parameters and module names here and there.  *Usually* Python error/warning messages are pretty helpful, but sometimes going to StackOver or the documentation was required.
 
