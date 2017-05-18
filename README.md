@@ -62,6 +62,13 @@ The precision, recall, and f1 scores are also reported.  To interpret the result
 
 The algorithms perform pretty similarly, but the Naive Bayes was more balanced between precision and recall for both types of tweets, so I used that algorithm to analyze the Derby tweet corpus.
 
+Here are the results:
+https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNeg.png
+
+Later, I used Textblob's sentiment.polarity to get a sense of how positive and negative tweets.  The bar graph below shows that most tweets were relatively neutral.
+https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNegNeut.png
+https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentdistr.png
+
 
 # Derby Tweet Stats Over Time
 
@@ -73,5 +80,6 @@ https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_twe
 
 The link below shows the plot of the 5m averages of sentiment polarity over time.  The vertical gray line indicates time period from 6:55-7:00pm, which is the 5 minute period when tweeting activity was most intense (about 10 minutes after the race itself). 
 https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentimentPolarity_vs_time.png
+
 
 
