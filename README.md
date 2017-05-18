@@ -41,11 +41,13 @@ You'll notice that the code also cleans up the text of the tweets to prepare the
 In https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/DerbyDataVisualizations.ipynb I create two images.
 
 The first is one of those famous 'wordclouds'.  The text colors are random (the wordcloud is generated before any sentiment analysis), but the size of the word is correlated with its frequency in the Derby tweet corpus.  Here is the link:
-![image](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/twitter_derby.png =250x)
+![alt text](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/twitter_derby.png)
 
 
 The frequency of the 25 most commonly tweeted words in the Derby tweet corpus.  I'm a little surprised 'one' isn't considered a stopw![alt text](ord (stopwords are words that are considered to have little information about sentiment and that are removed from tweets during the 'cleaning' process).  But, surprising to me, 'co' deserves to be up there; a "co-favorite" happened to be the winner of the Derby this year!
-![alt text](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_frequency_distr.png=250x250)
+![alt text](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_frequency_distr.png)
+
+<img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_frequency_distr.png" width="48">
 
 
 # Training Sentiment Analysis Algorithms
