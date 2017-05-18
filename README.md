@@ -8,7 +8,7 @@ The purpose of this project was to give myself something to play with order to l
 
 Since the code I was customizing is 2+ years old, I got a lot of warnings/errors due to changes in the packages used (or even changes I made to the code).  Fortunately, Python error/warning messages are *usually* pretty helpful.  But thank heavens for StackOverflow!
 
-You will notice that there are two gaps of several hours in my tweet corpus  (due to some rather silly technical difficulties that I simply didn't know to watch out for!).  Fortunately, I managed to gather tweets during the actual race.  One of the 'learning experiences' I encountered caused me to lose the code I used to gather the tweets.   I customized the following code to gather the streaming data:
+You will notice that there are two gaps of several hours in my tweet corpus  (due to some rather silly technical difficulties that I simply didn't know to watch out for!).  Fortunately, I managed to gather tweets during the actual race.  Later, one of the, shall we say 'learning experiences' I encountered caused me to lose the code I used to gather the tweets.   I customized the following code to gather the streaming data:
 https://github.com/deepnadevkar/twittersentimentanalysis/blob/master/tweetstreaming.py   
 
 One point is, though, that I don't have a record what my key words were (to decide which tweets to collect), other than that I know they included "Kentucky Derby", "Churchill Downs", and several of the front runners' names (but not all contenders).  Because my list of key words was hastily put together before work, take the wordcloud I made with a grain of salt.  However, it did manage to pick up Tom Brady (an attendee, not a contender, silly), despite the fact that I definitely didn't include his name in my key words list.  
@@ -47,3 +47,12 @@ https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_fre
 
 
 # Training Sentiment Analysis Algorithms
+
+
+https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/TrainSentimentAnalysis.ipynb
+
+
+
+# Derby Tweet Stats Over Time
+
+https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/DerbyTweetStatsOverTime.ipynb
