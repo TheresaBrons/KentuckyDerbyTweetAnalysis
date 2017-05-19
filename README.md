@@ -70,19 +70,19 @@ Here are the results:
 
 Later, I used Textblob's sentiment.polarity to get a sense of how positive and negative tweets.  The bar graph below shows that most tweets were relatively neutral.
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNegNeut.png" width="400" height="450">
-<img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentdistr.png" width="400" height="600">
+<img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentdistr.png" width="550" height="450">
 
 
 # Derby Tweet Stats Over Time
 
 The following code produces some interesting graphs, described below.  The statistical analysis had to be done with a pandas.core.series.Series of pandas.libs.tslib.Timestamp objects. But to graph, I wanted a list of just the times, adjusting for some bizarre time-zone issue that I will never be able to figure out, having permanently lost the file I used to stream.  So you'll see a little work-around that Devkar didn't have to do.
-https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/DerbyTweetStatsOverTime.ipynb
+<img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/DerbyTweetStatsOverTime.ipynb">
 
 The first graph it produces shows the 1 minute tweet count totals, graphed over time.  No, people did not suddenly stop tweeting during two periods of Derby Day.  Instead, my computer suffered some technical difficulties during the tweet streaming due to operator error - funny story!  Oh, live and learn... 
-https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_tweet_counts.png
+<img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_tweet_counts.png">
 
 The link below shows the plot of the 5m averages of sentiment polarity over time.  The vertical gray line indicates time period from 6:55-7:00pm, which is the 5 minute period when tweeting activity was most intense (about 10 minutes after the race itself). 
-https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentimentPolarity_vs_time.png
+<img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentimentPolarity_vs_time.png">
 
 
 
