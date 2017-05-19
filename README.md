@@ -40,7 +40,7 @@ You'll notice that the code also cleans up the text of the tweets to prepare the
 # Derby Data Visualization
 In https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/DerbyDataVisualizations.ipynb I create two images.
 
-The first is one of those famous 'wordclouds'.  The text colors are random (the wordcloud is generated before any sentiment analysis), but the size of the word is correlated with its frequency in the Derby tweet corpus.  Here is the link:
+The first is one of those famous 'wordclouds'.  The text colors are random (the wordcloud is generated before any sentiment analysis), but the size of the word is correlated with its frequency in the Derby tweet corpus. 
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/twitter_derby.png" width="800" height="500">
 
 
