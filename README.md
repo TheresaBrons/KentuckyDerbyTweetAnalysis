@@ -41,10 +41,10 @@ You'll notice that the code also cleans up the text of the tweets to prepare the
 In https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/DerbyDataVisualizations.ipynb I create two images.
 
 The first is one of those famous 'wordclouds'.  The text colors are random (the wordcloud is generated before any sentiment analysis), but the size of the word is correlated with its frequency in the Derby tweet corpus.  Here is the link:
-![alt text](https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/twitter_derby.png)
+<img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/twitter_derby.png" width="800" height="500>
 
 
-The frequency of the 25 most commonly tweeted words in the Derby tweet corpus.  I'm a little surprised 'one' isn't considered a (stopwords are words that are considered to have little information about sentiment and that are removed from tweets during the 'cleaning' process).  But, surprisingly to me, 'co' deserves to be up there; a "co-favorite" happened to be the winner of the Derby this year!
+The next graph shows the frequency of the 25 most commonly tweeted words in the Derby tweet corpus.  I'm a little surprised 'one' isn't considered a (stopwords are words that are considered to have little information about sentiment and that are removed from tweets during the 'cleaning' process).  But, surprisingly to me, 'co' deserves to be up there; a "co-favorite" happened to be the winner of the Derby this year!
 
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_frequency_distr.png" width="800" height="500">
 
@@ -69,6 +69,7 @@ Here are the results:
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNeg.png" width="400" height="450">
 
 Later, I used Textblob's sentiment.polarity to get a sense of how positive and negative tweets.  The bar graph below shows that most tweets were relatively neutral.
+
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNegNeut.png" width="400" height="450">
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentdistr.png" width="550" height="450">
 
@@ -81,7 +82,7 @@ The following code produces some interesting graphs, described below.  The stati
 The first graph it produces shows the 1 minute tweet count totals, graphed over time.  No, people did not suddenly stop tweeting during two periods of Derby Day.  Instead, my computer suffered some technical difficulties during the tweet streaming due to operator error - funny story!  Oh, live and learn... 
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_tweet_counts.png">
 
-The link below shows the plot of the 5m averages of sentiment polarity over time.  The vertical gray line indicates time period from 6:55-7:00pm, which is the 5 minute period when tweeting activity was most intense (about 10 minutes after the race itself). 
+The final graph shows the plot of the 5m averages of sentiment polarity over time.  The vertical gray line indicates time period from 6:55-7:00pm, which is the 5 minute period when tweeting activity was most intense (about 10 minutes after the race itself). 
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentimentPolarity_vs_time.png">
 
 
