@@ -70,7 +70,7 @@ Here are the results:
 
 Later, I used Textblob's sentiment.polarity to get a sense of how positive and negative tweets.  The bar graph below shows that most tweets were relatively neutral.
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNegNeut.png" width="400" height="450">
-<img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentdistr.png" width="400" height="450">
+<img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_sentdistr.png" width="400" height="600">
 
 
 # Derby Tweet Stats Over Time
