@@ -80,7 +80,7 @@ Later, I used Textblob's sentiment.polarity to get a sense of how positive and n
 # Derby Tweet Stats Over Time
 
 The following code produces some interesting graphs, described below.  The statistical analysis had to be done with a pandas.core.series.Series of pandas.libs.tslib.Timestamp objects. But to graph, I wanted a list of just the times, adjusting for some bizarre time-zone issue that I will never be able to figure out, having permanently lost the file I used to stream.  So you'll see a little work-around that Devkar didn't have to do.
-<img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/DerbyTweetStatsOverTime.ipynb">
+"https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/DerbyTweetStatsOverTime.ipynb"
 
 The first graph it produces shows the 1 minute tweet count totals, graphed over time.  No, people did not suddenly stop tweeting during two periods of Derby Day.  Instead, my computer suffered some technical difficulties during the tweet streaming due to operator error - funny story!  Oh, live and learn... 
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_tweet_counts.png">
