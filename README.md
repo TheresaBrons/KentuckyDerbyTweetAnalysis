@@ -15,7 +15,7 @@ One point is, though, that I don't have a record what my key words were (to deci
 
 # Software Used
 
-To gather tweets, you need to make a twitter developer account to access the Twitter API.  For those interested, here's a tutorial: https://www.dataquest.io/blog/streaming-data-python/ 
+To gather tweets, you need to make a twitter developer account to access the Twitter API.  For those interested, here is a tutorial: https://www.dataquest.io/blog/streaming-data-python/ 
  
 I did almost everything in Jupyter Notebook using Python 3.5.  I used MongoDB, Tweepy, and Pymongo to get the tweets into a JSON file. After that, I manipulated and plotted the data with the help of several Python packages (see code).  
 
