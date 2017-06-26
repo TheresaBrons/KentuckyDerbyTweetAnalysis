@@ -70,7 +70,7 @@ Here are the results:
 
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNeg.png" width="400" height="450">
 
-Later, I used Textblob's sentiment.polarity to get a sense of how positive and negative tweets.  The bar graph below shows that most tweets were relatively neutral.
+Later, I used Textblob's sentiment.polarity to get a sense of how positive and negative tweets.  This polarity is calculated through Textblob's use of its own Naive Bayes classifier, which has already been trained on a corpus of movie reviews.  The bar graph below shows that Textblob considers most tweets to be relatively neutral.
 
 <img src="https://github.com/TheresaBrons/KentuckyDerbyTweetAnalysis/blob/master/derby_posNegNeut.png" width="400" height="450">
 
